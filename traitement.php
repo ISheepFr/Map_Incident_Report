@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $addresse_utf8 = mb_convert_encoding($addresse,"UTF-8");
 
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-    $mysqli = new mysqli('localhost', 'id20533672_root', 'informatiqueM1*', 'id20533672_maps_incident_report');
+    $mysqli = new mysqli('localhost', 'id20533672_root', 'root', '');
     if ($mysqli->connect_errno) {
         die("connexion a échoué: " . $mysqli->connect_error);
     }  
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
         }
 
-        header("Location: index.html");
+        header("Location: index.php");
         exit; // Assurez-vous de terminer le script ici pour éviter toute exécution supplémentaire
 
     } else {

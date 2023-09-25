@@ -59,7 +59,7 @@
             <input type="hidden" id="lat" name="latitude" value="<?php echo $latitude ?>" >
             <input type="hidden" id="lon" name="longitude" value="<?php echo $longitude ?>" >
             <div class="btn">
-                <a class="exit_btn" href="./index.html">Retour</a>
+                <a class="exit_btn" href="./index.php">Retour</a>
                 <input class="submit_btn" type="submit" value="Soumettre">
             </div>
 

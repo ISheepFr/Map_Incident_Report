@@ -1,7 +1,7 @@
 <?php
     try 
     {
-        $bdd = new PDO('mysql:host=localhost;dbname=id20533672_maps_incident_report;charset=utf8', 'id20533672_root', 'informatiqueM1*');
+        $bdd = new PDO('mysql:host=localhost;dbname=id20533672_maps_incident_report;charset=utf8', 'root', '');
     }
     catch(PDOException $e)
     {
@@ -70,7 +70,7 @@
     // Par exemple, vous pouvez insérer ces données dans une base de données MySQL
 
     // Redirigez l'utilisateur vers une page de confirmation ou une autre page après le traitement
-    $redirect_url = isset($_POST['redirect_url']) ? $_POST['redirect_url'] : 'index.html';
+    $redirect_url = isset($_POST['redirect_url']) ? $_POST['redirect_url'] : 'index.php';
     header("Location: $redirect_url");
     exit();
 }

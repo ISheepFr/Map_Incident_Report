@@ -22,7 +22,7 @@
 <?php
     try 
     {
-        $bdd = new PDO('mysql:host=localhost;dbname=id20533672_maps_incident_report;charset=utf8', 'id20533672_root', 'informatiqueM1*');
+        $bdd = new PDO('mysql:host=localhost;dbname=id20533672_maps_incident_report;charset=utf8', 'root', '');
     }
     catch(PDOException $e)    {
         die('Erreur l: '.$e->getMessage());
