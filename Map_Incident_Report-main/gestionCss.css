@@ -1,0 +1,38 @@
+body::-webkit-scrollbar {
+    width: 0.55rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #cccccc;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888888;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: #9f9f9f;
+}
+    table {
+    table-layout:fixed;
+}
+table td {
+    overflow:hidden;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:165px ; 
+    text-align: center;
+
+}
+img{
+    margin-top:2px ; 
+    height:100px ; 
+    width:160px;
+}
+.ow{
+    display: block;
+    height:100px ; 
+    overflow: auto;
+    overflow-wrap: break-word;        
+}
