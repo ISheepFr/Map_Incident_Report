@@ -55,7 +55,6 @@
     } else {
         echo "No records found in the database.";
     }
-
     // Close the database connection
     ?>
 
