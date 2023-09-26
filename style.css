@@ -11,6 +11,27 @@ body,html{
 }
 
 
+.btn_location button{
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:60px;
+    right:20px;
+    z-index:1000;
+    cursor: pointer;
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location_logo{
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
 .cookie_consent_popup{
 	position:absolute;
 	bottom:50%;left:50%;
@@ -24,7 +45,7 @@ body,html{
     border-width: thick;
     border-color: rgb(0, 0, 0);
 	padding:20px;
-	z-index:1000;
+	z-index:1001;
 }
 .cookie_consent_popup h1{
     font-size:1.2em;

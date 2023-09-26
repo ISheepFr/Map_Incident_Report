@@ -24,11 +24,17 @@
                     <input type="submit" id="close_cookie_box" value="X"/>
             </form>';
         }?>
+        <div class="btn_location">
+            <button onclick=getLocation()>
+                <img src="./images/location_logo.png" class="location_logo"/>
+            </button>
+        </div>
         <div class="home">
             <div id="map">
             <!-- Ici s'affichera la carte -->
             </div>
         </div>
+        
 
             <!-- Formulaire caché pour stocker les variables -->
         <form id="variableForm" action="interface1.php" method="post">
