@@ -15,6 +15,7 @@ if (isset($_POST['delete_id']) || isset($_GET['delete_id'])) {
     // Prepare and execute the SQL delete statement
     $check = $bdd->prepare("DELETE FROM incident_report WHERE id = ?");
     $check->execute(array($id_to_delete)) ; 
+}
 header('Location: gestion.php');
 exit() ; 
 ?>
