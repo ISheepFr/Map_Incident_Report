@@ -162,7 +162,7 @@ xmlhttp.onreadystatechange = () => {
             // Boucle sur les données : 
             Object.entries(donnees.pts).forEach(points => {
                 // Un point
-                let markerPts = L.marker([points[1].lat, points[1].lon], { icon : violetIcon} ).addTo(macarte);
+                let markerPts = L.marker([points[1].lat, points[1].lon], { icon : violetIcon} );
                 // Faire une variable qu'on va envoyer, et append 
                 var stringss = "<u>Adresse :</u> " + points[1].adress + "<br> <u> Date :</u> " + points[1].date + "<br> <u> Description :</u> " + points[1].description + "<br> <u> Images :</u> <img src=\"./images/"+ points[1].link_pict_1 + "\" height='60px' width='60px'>" ; 
                 
