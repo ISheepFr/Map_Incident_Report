@@ -15,16 +15,6 @@ if (isset($_POST['delete_id']) || isset($_GET['delete_id'])) {
     // Prepare and execute the SQL delete statement
     $check = $bdd->prepare("DELETE FROM incident_report WHERE id = ?");
     $check->execute(array($id_to_delete)) ; 
-
-    if ($check->rowCount() > 0) {
-            echo "Entry with ID $id_to_delete has been deleted successfully.";
-    } else {
-            echo "No entry found with ID $id_to_delete.";
-    }
-} 
-else {
-    echo "No ID received to delete.";
-}
 header('Location: gestion.php');
 exit() ; 
 ?>
