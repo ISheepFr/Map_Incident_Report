@@ -11,3 +11,5 @@ Site web optimisé pour mobile permettant la déclaration d'incident en temps r�
 - Ajout de marqueurs violets pour ceux déjà existant
 - Sépération et indentation de quelques fichiers pour rendre le code plus visible
   
+# V2.02 (SB)
+- Ajout d'un bouton de recentrage par géolocalisation en haut à droite dans l'interface
